@@ -2,3 +2,7 @@
 bcg729
 *.o
 *.so
+*.deb
+*.tgz
+*.log
+doc-pak/
