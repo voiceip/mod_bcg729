@@ -9,7 +9,7 @@ checkinstall \
     --pkglicense="Mozilla Public License (MPL)" \
     --deldesc=no \
     --nodoc \
-    --maintainer="$USER\\<$USER@$HOSTNAME\\>" \
+    --maintainer="hi@kinsh.uk" \
     --pkgarch=$(dpkg --print-architecture) \
     --pkgname=freeswitch-mod-bcg729  \
-    --requires="freeswitch \(\>= 1.8\)" \
+    --requires="freeswitch \(\>= 1.10\)" \

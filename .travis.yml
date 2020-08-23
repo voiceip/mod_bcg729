@@ -1,0 +1,10 @@
+sudo: true
+dist: bionic
+os: linux
+language: bash
+services:
+  - docker
+before_install:
+  - docker build -t mod_bcg729 -f .devcontainer/Dockerfile .
+script:
+  -  docker run -v "$TRAVIS_BUILD_DIR":/mod_bcg729 -i mod_bcg729 bash -c "cd /mod_bcg729 && make && ls"
